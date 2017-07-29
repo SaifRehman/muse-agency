@@ -1,0 +1,74 @@
+<div class="logo">
+    <div class="logo-normal">
+        <a href="http://localhost:4200" class="simple-text">
+            MUSE
+        </a>
+    </div>
+</div>
+
+<div class="sidebar-wrapper">
+    <div class="user">
+        <div class="photo">
+            <img src="/src/assets/img/faces/avatar.jpg" />
+        </div>
+        <div class="info">
+            <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                        <span>
+                            Sami T
+                            <b class="caret"></b>
+                        </span>
+            </a>
+            <div class="collapse" id="collapseExample">
+                <ul class="nav">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <span class="sidebar-mini">MP</span>
+                            <span class="sidebar-normal">My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <span class="sidebar-mini">EP</span>
+                            <span class="sidebar-normal">Edit Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <span class="sidebar-mini">S</span>
+                            <span class="sidebar-normal">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <ul class="nav">
+            <li routerLinkActive="active">
+                <a data-toggle="collapse" href="#jobpostMenu">
+                    <i class="material-icons">apps</i>
+                    <p> Job Posting
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="jobpostMenu">
+                    <ul class="nav">
+                        <li routerLinkActive="active">
+                            <a [routerLink]="[menuItems[0].path]">
+
+                                <span class="sidebar-mini">JP</span>
+                                <span class="sidebar-normal">{{menuItems[0].title}}</span>
+                            </a>
+                        </li>
+                        <li routerLinkActive="active">
+                            <a [routerLink]="[menuItems[1].path]">
+                                <span class="sidebar-mini">VS</span>
+                                <span class="sidebar-normal">{{menuItems[1].title}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
