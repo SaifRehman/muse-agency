@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { WatsonService } from '../watson.service';
 import { Watson } from '../watson';
 import * as Chartist from 'chartist';
-import { NvD3Component } from 'ng2-nvd3';
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
@@ -18,13 +17,13 @@ Tone:string="";
     private show:string = "";
 
     constructor(private http: Http, private watsonService: WatsonService) {
-        
+
     }
 
     ngOnInit() {
 
     }
-  callWatsonToneAnalyzerApi() { 
+  callWatsonToneAnalyzerApi() {
     var body = {"Tone":this.Tone};
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { WatsonService } from '../watson.service';
 import { Watson } from '../watson';
 import * as Chartist from 'chartist';
-import { NvD3Component } from 'ng2-nvd3';
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
@@ -16,7 +15,7 @@ import 'rxjs/add/operator/catch';
 export class WatsonVisionComponent implements OnInit {
 link:string="";
     constructor(private http: Http, private watsonService: WatsonService) {
-        
+
     }
 
     ngOnInit() {

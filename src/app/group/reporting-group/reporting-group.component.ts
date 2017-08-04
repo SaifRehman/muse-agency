@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { GroupService } from '../group.service';
 import { Group } from '../group';
 import * as Chartist from 'chartist';
-import { NvD3Component } from 'ng2-nvd3';
 declare let d3: any;
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';

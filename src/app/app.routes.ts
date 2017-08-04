@@ -6,7 +6,6 @@ export const appRoutes: Routes = [{
     path: '', component: AdminLayoutComponent, children: [
         {path: 'advisor', loadChildren: 'app/advisor/advisor.module#AdvisorModule'},
         {path: 'group', loadChildren: 'app/group/group.module#GroupModule'},
-        {path: 'watson', loadChildren: 'app/watson/watson.module#WatsonModule'},
         {path: 'jobpost', loadChildren: 'app/jobpost/jobpost.module#JobpostModule'},
         {path: 'guardian', loadChildren: 'app/guardian/guardian.module#GuardianModule'},
         {path: 'student', loadChildren: 'app/student/student.module#StudentModule'},
@@ -15,8 +14,6 @@ export const appRoutes: Routes = [{
     ]
 },
     // General matches
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: '**', redirectTo: 'home', pathMatch: 'full'},
+    {path: '', redirectTo: 'jobpost', pathMatch: 'full'},
+    {path: '**', redirectTo: 'jobpost', pathMatch: 'full'},
 ];
-
-

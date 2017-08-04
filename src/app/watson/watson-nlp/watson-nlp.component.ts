@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { WatsonService } from '../watson.service';
 import { Watson } from '../watson';
 import * as Chartist from 'chartist';
-import { NvD3Component } from 'ng2-nvd3';
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
@@ -23,8 +22,8 @@ export class WatsonNLPComponent implements OnInit {
     ngOnInit() {
 
     }
-    // this function gets called from html (button) , and it calls the wastson api on django 
-    callWatsonNlpApi() { 
+    // this function gets called from html (button) , and it calls the wastson api on django
+    callWatsonNlpApi() {
         var body = {"data":this.sentance};
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
@@ -46,4 +45,3 @@ export class WatsonNLPComponent implements OnInit {
     }
 
 }
-

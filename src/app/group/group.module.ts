@@ -8,7 +8,6 @@ import {GroupService} from './group.service';
 import {RouterModule} from '@angular/router';
 import {groupRoutes} from './group.routes';
 import {FormsModule} from '@angular/forms';
-import { NvD3Component } from 'ng2-nvd3';
 import { ChartModule } from 'angular2-chartjs';
 
 @NgModule({
@@ -23,7 +22,6 @@ import { ChartModule } from 'angular2-chartjs';
     AddGroupComponent,
     ListGroupsComponent,
     ReportingGroupComponent,
-    NvD3Component
   ],
   exports: [
   ],
